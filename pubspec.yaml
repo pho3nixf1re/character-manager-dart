@@ -1,0 +1,12 @@
+name: character_manager
+dependencies:
+  browser: any
+  sass: any
+  angular: any
+  angularfire:
+    git:
+      url: https://github.com/pho3nixf1re/angularFire.git
+      ref: dart
+transformers:
+  - sass
+  - angular

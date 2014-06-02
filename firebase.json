@@ -1,0 +1,9 @@
+{
+  "firebase": "boiling-fire-5958",
+  "public": "build",
+  "ignore": [
+    "firebase.json",
+    ".*",
+    "**/node_modules/**"
+  ]
+}

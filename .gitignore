@@ -1,0 +1,21 @@
+# Created by http://www.gitignore.io
+
+### SublimeText ###
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+*.sublime-project
+
+### Dart ###
+# Don’t commit the following directories created by pub.
+build/
+packages/
+
+# Or the files created by dart2js.
+*.dart.js
+*.dart.precompiled.js
+*.js_
+*.js.deps
+*.js.map
