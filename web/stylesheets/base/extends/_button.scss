@@ -14,4 +14,8 @@
     background-color: $hover-button-color;
     color: white;
   }
+  &:disabled {
+    color: lighten($base-button-color, 40%);
+    background-color: lighten($base-button-color, 20%);
+  }
 }

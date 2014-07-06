@@ -8,5 +8,8 @@ dependencies:
       url: https://github.com/pho3nixf1re/angularFire.git
       ref: dart
 transformers:
-  - sass
-  - angular
+- sass
+- angular:
+    html_files:
+    - web/characters/list.html
+    - web/characters/new.html

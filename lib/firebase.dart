@@ -10,7 +10,7 @@ class FirebaseResultsAdapter {
   // AngularFire _results;
 
   FirebaseResultsAdapter() {
-    Firebase _firebase = new Firebase(BASE);
+    _firebase = new Firebase(BASE);
   }
 
   AngularFire results([String path]) {
@@ -19,7 +19,7 @@ class FirebaseResultsAdapter {
       path = _parsePath(path);
       firebase = _firebase.child(path);
     }
-    new AngularFire(firebase);
+    return new AngularFire(firebase);
   }
 
   String _parsePath(String path) {

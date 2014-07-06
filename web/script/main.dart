@@ -3,13 +3,13 @@ import 'package:angular/application_factory.dart';
 import 'package:angular/routing/module.dart';
 
 import 'package:character_manager/firebase.dart';
-import 'package:character_manager/controllers/characters.dart';
+import 'package:character_manager/controllers.dart';
 import 'package:character_manager/routes.dart';
 
-class CharacterManagerModule extends Module {
+class CharacterManagerModule extends Module with CharacterManagerControllers {
   CharacterManagerModule() {
-    type(CharactersController);
-    // type(FirebaseResultsAdapter);
+    loadControllers();
+    type(FirebaseResultsAdapter);
     value(RouteInitializerFn, characterManagerRouteInitializer);
   }
 }

@@ -1,0 +1,12 @@
+<div class="characters" list-characters-ctrl>
+  <h1>Characters</h1>
+  <section
+    class="character"
+    data-characterId="{{ character.$key }}"
+    ng-repeat="character in ctrl.characters">
+    <h1>{{ character.$value.name }}</h1>
+    <button class="remove" ng-click="ctrl.deleteCharacter(character.$key)">
+      Delete
+    </button>
+  </section>
+</div>

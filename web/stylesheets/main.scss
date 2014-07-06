@@ -2,3 +2,8 @@
 @import "base/grid-settings";
 @import "neat/neat";
 @import "base/base";
+
+input.ng-invalid.ng-dirty {
+  background-color: $error-color;
+  border: darken($error-color, 20%) 1px solid;
+}
