@@ -3,6 +3,7 @@ import 'package:angular/angular.dart';
 void characterManagerRouteInitializer(Router router, RouteViewFactory views) {
   views.configure({
     'characters': ngRoute(
+      defaultRoute: true,
       path: '/characters',
       mount: {
         'list': ngRoute(
